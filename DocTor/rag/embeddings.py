@@ -1,4 +1,3 @@
-from rag.client import client
 import numpy as np
 from huggingface_hub import InferenceClient
 
@@ -18,6 +17,7 @@ def create_embeddings(texts):
     )
 
     return np.array(embeddings, dtype=np.float32)
+
 
 
 

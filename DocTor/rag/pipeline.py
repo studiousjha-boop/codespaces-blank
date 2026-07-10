@@ -1,7 +1,7 @@
 from rag.loader import load_pdf
 from rag.chunker import chunk_text
 from rag.embeddings import create_embeddings
-from DocTor.rag.vector_store import create_index
+from rag.vector_store import create_index
 from rag.retriever import retrieve
 from rag.llm_service import generate_answer
 
@@ -31,9 +31,9 @@ class RAGPipeline:
             self.chunks    
         )
 
-        answer = generate_answer(
+        return generate_answer(
             question,
             retrieved_chunks
         )
+    
 
-        return answer
