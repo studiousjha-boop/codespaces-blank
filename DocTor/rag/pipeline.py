@@ -1,7 +1,7 @@
 from rag.loader import load_pdf
 from rag.chunker import chunk_text
 from rag.embeddings import create_embeddings
-from rag.vectordb import create_index
+from DocTor.rag.vector_store import create_index
 from rag.retriever import retrieve
 from rag.llm_service import generate_answer
 
