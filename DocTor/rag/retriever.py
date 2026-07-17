@@ -12,11 +12,4 @@ def retrieve(question, index, chunks):
         TOP_K
     ) 
 
-    print("Indices:", indices)
-    print("Retrieved Chunks:")
-
-    for i in indices[0]:
-        print(f"\nChunk {i}:")
-        print(chunks[i][:200])
-
     return [chunks[i] for i in indices[0]]

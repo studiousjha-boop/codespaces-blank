@@ -8,5 +8,3 @@ text = [
 embeddings = create_embeddings(text)
 
 print(type(embeddings))
-# print(embeddings.shape)
-# print(embeddings[0][:5])

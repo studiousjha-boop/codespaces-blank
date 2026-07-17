@@ -11,6 +11,7 @@ You are a helpful AI assistant.
 Answer ONLY using the provided context.
 
 If the answer is not found in the context, reply exactly:
+
 "I couldn't find that information in the document."
 
 Context:
@@ -26,7 +27,6 @@ Answer:
 
 
 def generate_answer(question, chunks):
-
 
     prompt = build_prompt(question, chunks)
 
